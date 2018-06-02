@@ -1,4 +1,8 @@
+import java.util.ArrayList;
 
-public class SeaPort {
-
+public class SeaPort extends Thing {
+	ArrayList<Dock> docks;
+	ArrayList<Ship> que;
+	ArrayList<Ship> ships;
+	ArrayList<Person> people;
 }

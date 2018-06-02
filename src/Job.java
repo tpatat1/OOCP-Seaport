@@ -1,4 +1,4 @@
 
-public class Job {
+public class Job extends Thing {
 
 }

@@ -1,4 +1,4 @@
 
-public class Dock {
-
+public class Dock extends Thing {
+	Ship ship;
 }
