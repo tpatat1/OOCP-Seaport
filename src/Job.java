@@ -1,9 +1,13 @@
+import java.util.ArrayList;
 
 public class Job extends Thing {
-
-	public Job(String name, int index, int parent) {
+	double duration;
+	ArrayList<String> requirements;
+	public Job(String name, int index, int parent, 
+			double duration, ArrayList<String> requirements) {
 		super(name, index, parent);
-		// TODO Auto-generated constructor stub
+		this.duration= duration; 
+		this.requirements= requirements;
 	}
 
 }

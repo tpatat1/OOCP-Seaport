@@ -5,8 +5,12 @@ public class Ship extends Thing {
 	double draft, length, weight, width;
 	ArrayList<Job> jobs;
 	
-	public Ship(String name, int index, int parent) {
+	public Ship(String name, int index, int parent,
+			double weight,double length, double width,double draft) {
 		super(name, index, parent);
-		// TODO Auto-generated constructor stub
+		this.weight=weight;
+		this.length=length;
+		this.width=width;
+		this.draft=draft;
 	}
 }
