@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 
 public class SeaPortProgram<T> extends JFrame {
 	public String iconFileLoc;
+	public World world= new World("This World", 0, 0);
 	private ContentParser cp;
 	
 	public void parseFile(String fileLoc){
@@ -24,6 +25,7 @@ public class SeaPortProgram<T> extends JFrame {
 				}
 				else if(inputArr[0].equals("port")){
 					SeaPort tempPort = cp.makePort(inputArr);
+					world.addPort(tempPort);
 				}
 				else if(inputArr[0].equals("ship")){
 					Ship tempShip = cp.makeShip(inputArr);
@@ -48,7 +50,11 @@ public class SeaPortProgram<T> extends JFrame {
 	}
 	
 	
+	private SeaPortProgram(){
+		// TODO Add GUI Elements
+		super("Sea Port Program");
+	}
 	public static void main(String[] args){
-		
+		new SeaPortProgram().setVisible(true);
 	}
 }

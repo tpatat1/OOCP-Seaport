@@ -1,22 +1,23 @@
 package Objects;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class SeaPort extends Thing {
 	public SeaPort(String name, int index, int parent) {
 		super(name, index, parent);
 	}
-	ArrayList<Dock> docks;
 	ArrayList<Ship> que;
-	ArrayList<Ship> ships;
-	ArrayList<Person> people;
+	HashMap<Integer, Dock> docks;
+	HashMap<Integer, Ship> ships;
+	HashMap<Integer, Person> people;
 	
 	public void addDock(Dock dock){
-		docks.add(dock);
+		docks.put(dock.index, dock);
 	}
 	public void addShip(Ship ship){
-		ships.add(ship);
+		ships.put(ship.index,ship);
 	}
 	public void addPerson(Person person){
-		people.add(person);
+		people.put(person.index, person);
 	}
 }

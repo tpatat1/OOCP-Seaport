@@ -14,4 +14,8 @@ public class Ship extends Thing {
 		this.width=width;
 		this.draft=draft;
 	}
+	
+	public void addJob(Job job){
+		jobs.add(job);
+	}
 }
