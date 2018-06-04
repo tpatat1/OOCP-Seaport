@@ -1,5 +1,15 @@
 package GUI_elements;
 
-public class FilePickerPanel {
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JPanel;
 
+public class FilePickerPanel extends JPanel {
+    JFileChooser filechooser ; 
+    JButton addFileButton; 
+    public FilePickerPanel(){
+        super();
+        addFileButton = new JButton();
+        this.add(addFileButton);
+    }
 }

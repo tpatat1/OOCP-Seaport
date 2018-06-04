@@ -1,16 +1,18 @@
-package Objects;
+import java.awt.Dimension;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import utils.*;
 import javax.swing.JFrame;
+import Objects.*;
+import GUI_elements.FilePickerPanel;
 
-public class SeaPortProgram<T> extends JFrame {
+public class SeaPortProgram extends JFrame {
 	public String iconFileLoc;
 	public World world= new World("This World", 0, 0);
 	private ContentParser cp;
-	
+	FilePickerPanel fpp; 
 	public void parseFile(String fileLoc){
 		try {
 			FileReader fr= new FileReader(new File(fileLoc));
@@ -59,6 +61,9 @@ public class SeaPortProgram<T> extends JFrame {
 	private SeaPortProgram(){
 		// TODO Add GUI Elements
 		super("Sea Port Program");
+		fpp= new FilePickerPanel();
+		this.add(fpp);
+		this.setSize(new Dimension(200, 200));
 	}
 	public static void main(String[] args){
 		new SeaPortProgram().setVisible(true);
