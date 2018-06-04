@@ -20,4 +20,8 @@ public class SeaPort extends Thing {
 	public void addPerson(Person person){
 		people.put(person.index, person);
 	}
+	
+	public Dock getDock(int index){
+		return docks.get(index);
+	}
 }

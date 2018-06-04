@@ -6,6 +6,10 @@ public class Dock extends Thing {
 		super(name, index, parent);
 	}
 	
+	public void setShip(Ship ship){
+		this.ship=ship;
+	}
+	
 	public String toString(){
 		return "Dock: "+this.name+" ID: "+this.index+" Holding Ship: "+this.ship.name;
 	}

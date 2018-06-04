@@ -10,5 +10,4 @@ public class Job extends Thing {
 		this.duration= duration; 
 		this.requirements= requirements;
 	}
-
 }

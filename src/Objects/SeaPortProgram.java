@@ -22,6 +22,7 @@ public class SeaPortProgram<T> extends JFrame {
 				
 				if(inputArr[0].equals("dock")){
 					Dock tempDock = cp.makeDock(inputArr);
+					this.world.addDock(tempDock);
 				}
 				else if(inputArr[0].equals("port")){
 					SeaPort tempPort = cp.makePort(inputArr);
@@ -29,18 +30,23 @@ public class SeaPortProgram<T> extends JFrame {
 				}
 				else if(inputArr[0].equals("ship")){
 					Ship tempShip = cp.makeShip(inputArr);
+					world.addShip(tempShip);
 				}
 				else if(inputArr[0].equals("cship")){
 					CargoShip tempShip= cp.makeCargoShip(inputArr);
+					world.addShip(tempShip);
 				}
 				else if(inputArr[0].equals("pship")){
 					PassengerShip tempShip=cp.makePassengerShip(inputArr);
+					world.addShip(tempShip);
 				}
 				else if(inputArr[0].equals("person")){
 					Person tempPerson = cp.makePerson(inputArr);
+					world.addPerson(tempPerson);
 				}
 				else if(inputArr[0].equals("job")){
 					Job tempJob = cp.makeJob(inputArr);
+					world.addJob(tempJob);
 				}
 			}
 		} catch (IOException e) {
