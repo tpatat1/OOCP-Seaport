@@ -19,4 +19,7 @@ public class Ship extends Thing {
 		jobs.add(job);
 	}
 	
+	public String toString(){
+		return "Ship: "+this.name+" "+this.index+"\n";
+	}
 }

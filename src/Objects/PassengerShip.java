@@ -13,5 +13,7 @@ public class PassengerShip extends Ship {
 		this.numberOfRooms = numberRooms;
 		this.numberOfOccupiedRooms = numberOcc;
 	}
-
+	public String toString(){
+		return "Passenger Ship: "+this.name+" "+this.index+"\n";
+	}
 }

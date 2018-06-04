@@ -63,7 +63,7 @@ public class SeaPortProgram extends JFrame {
 		super("Sea Port Program");
 		fpp= new FilePickerPanel();
 		this.add(fpp);
-		this.setSize(new Dimension(200, 200));
+		this.setSize(new Dimension(1000, 1000));
 	}
 	public static void main(String[] args){
 		new SeaPortProgram().setVisible(true);

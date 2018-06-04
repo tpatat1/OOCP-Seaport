@@ -10,4 +10,8 @@ public class Job extends Thing {
 		this.duration= duration; 
 		this.requirements= requirements;
 	}
+
+	public String toString(){
+		return "Job: "+this.name+" "+this.index+"\n";
+	}
 }

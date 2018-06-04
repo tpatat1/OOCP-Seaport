@@ -11,6 +11,10 @@ public class Dock extends Thing {
 	}
 	
 	public String toString(){
-		return "Dock: "+this.name+" ID: "+this.index+" Holding Ship: "+this.ship.name;
+		String out="Dock: "+this.name+" ID: "+this.index+" Holding Ship: "+this.ship.name+"\n";
+		if(this.ship!=null)
+			return out+"\tShip: "+this.ship.name+"  "+this.ship.index;
+		else
+			return out;
 	}
 }

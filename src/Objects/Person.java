@@ -6,4 +6,9 @@ public class Person extends Thing {
 		super(name, index, parent);
 		this.skill= skill;
 	}
+
+
+	public String toString(){
+		return "Person: "+this.name+" "+this.index+" "+this.skill+"\n";
+	}
 }

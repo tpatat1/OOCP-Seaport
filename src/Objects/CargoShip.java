@@ -13,4 +13,8 @@ public class CargoShip extends Ship {
 		this.cargoVolume=cargoVol;
 		this.cargoWeight= cargoWeight;
 	}
+
+	public String toString(){
+		return "Cargo Ship: "+this.name+" "+this.index+"\n";
+	}
 }

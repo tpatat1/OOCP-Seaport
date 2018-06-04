@@ -24,4 +24,9 @@ public class SeaPort extends Thing {
 	public Dock getDock(int index){
 		return docks.get(index);
 	}
+
+
+	public String toString(){
+		return "Port: "+this.name+" "+this.index+"\n";
+	}
 }

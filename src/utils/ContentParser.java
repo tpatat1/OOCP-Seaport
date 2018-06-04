@@ -2,7 +2,7 @@ package utils;
 
 import java.util.ArrayList;
 import Objects.*;
-public class ContentParser<T> {
+public class ContentParser{
 	
 	public Dock makeDock(String[] input){
 		String dockName = input[1];
